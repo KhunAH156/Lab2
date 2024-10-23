@@ -27,13 +27,13 @@ def sort_temperature(numbers):
     return numbers
 
 def cal_median_temperature(sorted_numbers):
-    
-    if len(sorted_numbers) % 2 == 0:
-         x=len(sorted_numbers)//2
+    n=len(sorted_numbers)
+    if n % 2 == 0:
+         x=n//2
          median= (sorted_numbers[x] + sorted_numbers[x-1])/2
      
-    elif len(sorted_numbers) % 2 == 1:
-        y=(len(sorted_numbers)-1)//2
+    elif n % 2 == 1:
+        y=(n-1)//2
         median=sorted_numbers[y]
 
     return median
